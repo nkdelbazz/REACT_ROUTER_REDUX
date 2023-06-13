@@ -1,0 +1,112 @@
+nav#header{
+    font-size: 1rem;
+    display: flex;
+    grid-auto-flow: column;
+    width:  100%;
+    background-color: rgba(35, 33, 124, 0.404);
+    padding-top: 0.2em ;
+    padding-bottom: 0.3em;
+    background: linear-gradient(180deg, rgb(10, 10, 10), rgb(7, 6, 6));
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+
+                
+}
+
+nav#header > div.element{
+   height: 1.3em;
+   font-size: 2em;
+   text-align: center;
+   margin: 0.2em;
+   padding: 0.4em;
+   border-radius: 0.8em;
+   font-weight: bolder;
+   padding-left: 0.5em;
+   padding-right: 0.5em;
+   border: 0.2em solid rgb(78, 78, 78);
+   background-color: rgba(158, 158, 158, 0.582);
+   color: rgb(0, 0, 0);
+}
+
+nav#header > div.space{
+    background-color: transparent;
+    border: 0.2em solid transparent;
+    flex: 1;
+ }
+
+nav#header > div.element:hover{
+    cursor: pointer;
+    background-color: rgba(79, 2, 131, 0.74);
+    color: beige;
+ }
+
+ nav#header > div.space{
+    background-color: transparent;
+    border: 0.2em solid transparent;
+ }
+
+ #headerBar{
+   display: none;
+ }
+
+ @media screen and (max-width: 1000px) {
+   
+
+   nav#header{
+      font-size: 1rem;
+      display: flex;
+      grid-auto-flow: column;
+      width:  100%;
+      padding-top: 0.2em ;
+      padding-bottom: 0.3em;
+      background: transparent;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+  }
+
+  #headerBar{
+   display: flex;
+   height: 3rem;
+   background-color: black;
+   color: white;
+   font-weight: bold;
+   align-items: center;
+   justify-content: center;
+ }
+
+ #headerBar > div{
+   color: white;
+   height: 50%;
+ }
+
+ #headerBar > div > svg{
+   height: 100%;
+   cursor: pointer;
+ }
+
+
+   nav#header > div.space{
+      display: none;
+   }
+
+   nav#header > div.element{
+      line-height: 1.5em;
+      margin: 0em;
+      font-size: 1.5em;
+      text-align: center;
+      color: rgb(0, 0, 0);
+      width: 90%;
+   }
+
+   nav#header > div.element:hover{
+      background-color: transparent;
+      border: 0.2em solid transparent;
+   }
+
+
+ }
+
+
